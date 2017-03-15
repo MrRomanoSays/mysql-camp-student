@@ -34,7 +34,7 @@ SELECT teamName AS 'Team Name', COUNT(playerID) AS 'Total Players'
 FROM vteamRoster
 WHERE bats = 'L'
 GROUP BY teamName;
-*/
+
 SELECT teamName AS 'Team Name', COUNT(playerID) AS 'Total Players'
 FROM vteamRoster
 WHERE bats = 'L'
@@ -42,3 +42,5 @@ GROUP BY teamName
 HAVING COUNT(playerID) > 2;
 HAVING COUNT('Total Players') > 2;
 -- Remember, that I had to include COUNT function after having. Alias renamed the playerID not the COUNT(playerID) function.
+*/
+
