@@ -22,4 +22,16 @@ Create a query that counts the number of players within the vteamRoster view by 
 SELECT position AS Position, COUNT(playerID) AS 'Total Players'
 FROM vteamRoster
 GROUP BY position;
+
+
+-- HAVING CLAUSE EXERCISES
+-- list all the players from the vteamRoster view who bat left handed
+SELECT * 
+FROM vteamRoster
+WHERE bats = 'L';
+-- Now, determine which team has the most lefties using COUNT and GroupBy
+SELECT teamName AS 'Team Name', COUNT(playerID) AS 'Total Players'
+FROM vteamRoster
+WHERE bats = 'L'
+GROUP BY teamName;
 */
